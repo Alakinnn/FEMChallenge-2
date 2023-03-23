@@ -1,0 +1,129 @@
+*, *::before, *::after {
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    /* Setting up variables */
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --fs-light: 400;
+    --fs-bold: 700;
+}
+
+
+
+.container {
+    border-radius: 1rem;
+    margin: 4rem 2rem;
+    display: grid;
+    grid-template-rows: 1fr 0.8fr 0.8fr;
+    box-shadow: 0 0 0.5rem 0.1rem var(--light-gray);
+}
+
+.testimonial {
+    padding: 1rem;
+
+}
+.testimonial:nth-child(1) {
+    background-color: #fff;
+}
+
+.testimonial:nth-child(2) {
+    background-color: hsl(179, 57%, 41%);
+}
+.testimonial:last-child {
+    background-color: var(--cyan);
+
+}
+
+.desc {
+    color: #fff;
+}
+
+.desc_main {
+    color: var(--cyan)
+}
+
+.disclaimer {
+    color: var(--light-gray);
+}
+
+.detailed {
+    color: #9c9c9c;
+    line-height: 2rem;
+}
+
+.price {
+    display: flex;
+    gap: 1.2rem;
+}
+.price > div:first-child {
+    color: white;
+    font-size: 1.7rem;
+}
+.special {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--grayish-blue);
+    letter-spacing: 1px;
+}
+.btn { 
+    display:  block;
+    background-color: var(--bright-yellow);
+    outline: transparent;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 3px #9c9c9c;
+
+}
+.cyan_theme {
+    color: var(--bright-yellow);
+}
+.info_items {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5rem;
+    word-spacing: 1px;
+}
+
+@media (min-width: 25rem) {
+    .testimonial:nth-child(1) {
+        grid-column: span 2;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
